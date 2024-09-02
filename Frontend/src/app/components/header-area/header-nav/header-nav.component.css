@@ -1,0 +1,35 @@
+.headerNav {
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.navItem {
+    display: inline-flex;
+    flex-direction: column;
+    color: white;
+    width: 60px;
+    margin: 0 5px;
+}
+
+.navItemLineOne{
+    font-size: 15px;
+}
+
+.navItemLineTwo{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.itemBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 20px;
+}
+
+.navBasketCount {
+    margin: 0 10px;
+}
+

@@ -1,0 +1,20 @@
+<div class="checkoutProduct">
+    <img src={{product.imageUrl}} alt="checkoutProduct-img" class="checkoutProductImg"/>
+
+    <div class="checkoutProductInfo">
+        <p class="checkoutProductTitle">{{product.title}}</p>
+        <p class="productPrice">
+            <small>$</small>
+            <strong>{{product.price}}</strong>
+        </p>
+        <div class="productRating" [ngSwitch]="product.rating">
+            <p *ngSwitchCase="1">⭐</p> 
+            <p *ngSwitchCase="2">⭐⭐</p> 
+            <p *ngSwitchCase="3">⭐⭐⭐</p> 
+            <p *ngSwitchCase="4">⭐⭐⭐⭐</p> 
+            <p *ngSwitchCase="5">⭐⭐⭐⭐⭐</p> 
+        </div>
+        <button class="pointer" (click)="handleClick()">Remove from Basket</button>
+    </div>
+    
+</div>

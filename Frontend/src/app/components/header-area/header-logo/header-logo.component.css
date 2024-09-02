@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+	display: flex;
+    align-items: center;
+    color: #ff9f00;
+    margin: 0 20px;
+    padding: 10px;
+}
+  
+h2{
+    display: none;
+}
+
+.headerLogoImg{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    height: 35px ;
+    width: 35px; 
+}
+
+
+.headerLogoTitle{
+    text-decoration: none;
+    border: 0;
+    color: white;
+    font-size: x-large;
+}
+
+@media (min-width: 890px){
+    h2{
+    display: block;
+    }
+}

@@ -1,0 +1,25 @@
+<div class="product">
+    <div class="productInfo">
+        <p>{{product.title}}</p>
+        <p class="productPrice">
+            <small>$</small>
+            <strong> {{product.price}}</strong>
+        </p>
+        <div class="productRating" [ngSwitch]="product.rating">
+            <p *ngSwitchCase="1">⭐</p> 
+            <p *ngSwitchCase="2">⭐⭐</p> 
+            <p *ngSwitchCase="3">⭐⭐⭐</p> 
+            <p *ngSwitchCase="4">⭐⭐⭐⭐</p> 
+            <p *ngSwitchCase="5">⭐⭐⭐⭐⭐</p> 
+        </div>
+        <!-- @switch (product.rating) {
+            @case(1){ <div class="productRating">⭐</div> }
+            @case(2){ <div class="productRating">⭐⭐</div> }
+            @case(3){ <div class="productRating">⭐⭐⭐</div> }
+            @case(4){ <div class="productRating">⭐⭐⭐⭐</div> }
+            @case(5){ <div class="productRating">⭐⭐⭐⭐⭐</div> }
+        } -->
+    </div>
+    <img src={{product.imageUrl}} alt="product-img" />
+    <button class="pointer" (click)="handleClick()">Add to Basket</button>
+</div>

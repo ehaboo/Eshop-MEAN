@@ -1,0 +1,28 @@
+<div class="headerNav">
+    <a routerLink="/login" class="loginItem">
+        <div class="navItem">
+            <span class="navItemLineOne">
+                Hello Guest
+            </span>
+            <span class="navItemLineTwo">
+                Sing In
+            </span>
+        </div>
+    </a>
+    <div class="navItem">
+        <span class="navItemLineOne">
+            Your
+        </span>
+        <span class="navItemLineTwo">
+            Shop
+        </span>
+    </div>
+    <a routerLink="/checkout">
+        <div class="itemBasket">
+            <mat-icon class="pointer" aria-hidden="false" aria-label="Shopping icon" fontIcon="shoppingBasket"></mat-icon>
+            <span class="navItemLineTwo navBasketCount">
+                {{(checkoutListLength|async)}}
+            </span>
+        </div>
+    </a>
+</div>

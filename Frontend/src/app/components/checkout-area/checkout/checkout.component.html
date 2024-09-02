@@ -1,0 +1,20 @@
+<div class="checkout">
+    <div class="checkoutLeft">
+        <img src="../../../../assets/Images/checkoutAd.jpeg" alt="" class="checkoutAd"/>
+        <div>
+            <h2 class="checkoutTitle">
+                Your Shopping Basket
+            </h2>
+            <div>
+                @if((products$|async).length > 0) {
+                    <app-checkout-product *ngFor="let p of products$ |async" [product]="p"/>
+                }@else {
+                    <div >Nothing has been added to your list</div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="checkoutRight">
+        <app-subtotal /> 
+    </div>
+</div>

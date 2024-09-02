@@ -1,0 +1,12 @@
+<div class="home">
+    <div class="container">
+        <img src="../../../../assets/Images/ecommerce-img.webp" alt="Home_Image" class="homeImage" />
+        <div class="homeRow">
+            @if(products$|async) {
+                <app-product *ngFor="let p of products$ |async" [product]="p"/>
+            }@else {
+                <div class="loader">Loading...</div>
+            }
+        </div>
+    </div>
+</div>
